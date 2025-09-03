@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katraska S.A. - Envasado de Coleccionables</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-color: #1a202c;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(121, 9, 137, 0.2), transparent 40%),
+                radial-gradient(circle at 85% 30%, rgba(9, 65, 137, 0.2), transparent 40%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#">
+                <img src="./img/logo katraska.png" alt="Logo de Katraska S.A." class="h-10 w-auto">
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#nosotros" class="text-gray-600 hover:text-indigo-600 transition duration-300">Nosotros</a>
+                <a href="#servicios" class="text-gray-600 hover:text-indigo-600 transition duration-300">Servicios</a>
+                <a href="#contacto" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contacto</a>
+            </nav>
+            <a href="#contacto" class="hidden md:inline-block bg-indigo-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">Contáctanos</a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
+            <a href="#nosotros" class="block py-2 text-gray-600 hover:text-indigo-600">Nosotros</a>
+            <a href="#servicios" class="block py-2 text-gray-600 hover:text-indigo-600">Servicios</a>
+            <a href="#contacto" class="block py-2 text-gray-600 hover:text-indigo-600">Contacto</a>
+            <a href="#contacto" class="block mt-2 bg-indigo-600 text-white font-medium py-2 px-4 rounded-lg text-center hover:bg-indigo-700">Contáctanos</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white pt-32 pb-20 md:pt-40 md:pb-28">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">El Arte de Envasar Coleccionables</h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">En Katraska S.A. nos especializamos en soluciones de envasado de alta calidad para cartas, figuritas y todo tipo de tesoros de papel, garantizando su máxima protección y presentación.</p>
+                <a href="#servicios" class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-lg text-lg hover:bg-gray-200 transition duration-300">Conoce Nuestros Servicios</a>
+            </div>
+        </section>
+
+        <!-- "Nosotros" Section -->
+        <section id="nosotros" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-indigo-600 font-semibold">SOBRE NOSOTROS</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">Cuidamos lo que Más Valoras</h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Katraska S.A. nació de la pasión por el coleccionismo y el entendimiento de que cada pieza es única. Nuestra misión es ofrecer soluciones de envasado que no solo protegen, sino que realzan el valor de cartas y figuritas coleccionables.</p>
+                        <p class="text-gray-600 leading-relaxed">Utilizamos materiales de la más alta calidad y técnicas de precisión para asegurar que cada artículo se conserve en perfecto estado. Somos coleccionistas al servicio de coleccionistas.</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/600x400/6366f1/ffffff?text=Envasado+Premium" alt="Imagen de productos de envasado de Katraska S.A." class="rounded-xl shadow-lg w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- "Servicios" Section -->
+        <section id="servicios" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <span class="text-indigo-600 font-semibold">NUESTROS SERVICIOS</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Nuestras Soluciones de Envasado</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Ofrecemos un portafolio de servicios diseñado para cubrir todas las necesidades de protección de sus coleccionables.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m-9-5.747h18"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 12a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zM14.25 12a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Envasado de Cartas</h3>
+                        <p class="text-gray-600">Soluciones especializadas para cartas coleccionables (TCG, deportes). Usamos fundas libres de ácido, toploaders y sellado profesional.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5 0l-4.5 16.5"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Packaging de Figuritas</h3>
+                        <p class="text-gray-600">Diseñamos y producimos empaques a medida, desde blisters hasta cajas de presentación, que protegen y exhiben sus figuritas.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Proyectos Personalizados</h3>
+                        <p class="text-gray-600">¿Tienes una edición especial o una necesidad única? Colaboramos contigo para crear soluciones de envasado completamente personalizadas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- "Contacto" Section -->
+        <section id="contacto" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Póngase en Contacto</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">¿Tiene un proyecto en mente? Nos encantaría escucharlo. Complete el formulario y nos pondremos en contacto.</p>
+                </div>
+                <div class="max-w-3xl mx-auto">
+                    <form action="#" method="POST" class="bg-gray-50 p-8 rounded-lg shadow-md">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500" required>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500" required></textarea>
+                        </div>
+                        <div class="mt-6 text-center">
+                            <button type="submit" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-indigo-700 transition duration-300">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2024 Katraska S.A. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let i = 0; i < mobileMenuLinks.length; i++) {
+            mobileMenuLinks[i].addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
