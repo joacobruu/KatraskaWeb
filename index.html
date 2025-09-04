@@ -31,6 +31,7 @@
             <nav class="hidden md:flex space-x-8">
                 <a href="#nosotros" class="text-gray-600 hover:text-indigo-600 transition duration-300">Nosotros</a>
                 <a href="#servicios" class="text-gray-600 hover:text-indigo-600 transition duration-300">Servicios</a>
+                <a href="#trabajos" class="text-gray-600 hover:text-indigo-600 transition duration-300">Trabajos</a>
                 <a href="#contacto" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contacto</a>
             </nav>
             <a href="#contacto" class="hidden md:inline-block bg-indigo-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">Contáctanos</a>
@@ -43,6 +44,7 @@
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
             <a href="#nosotros" class="block py-2 text-gray-600 hover:text-indigo-600">Nosotros</a>
             <a href="#servicios" class="block py-2 text-gray-600 hover:text-indigo-600">Servicios</a>
+            <a href="#trabajos" class="block py-2 text-gray-600 hover:text-indigo-600">Trabajos</a>
             <a href="#contacto" class="block py-2 text-gray-600 hover:text-indigo-600">Contacto</a>
             <a href="#contacto" class="block mt-2 bg-indigo-600 text-white font-medium py-2 px-4 rounded-lg text-center hover:bg-indigo-700">Contáctanos</a>
         </div>
@@ -112,15 +114,52 @@
             </div>
         </section>
 
+         <!-- "Nuestros Trabajos" Section -->
+        <section id="trabajos" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <span class="text-indigo-600 font-semibold">PORTAFOLIO</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">Algunos de Nuestros Trabajos</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Estamos orgullosos de la calidad y el detalle que ponemos en cada proyecto de envasado.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden group">
+                        <img src="./img/caja y sobre fortnite.png" alt="Trabajo de envasado para Fortnite" class="w-full h-64 object-contain group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Colección Fortnite</h3>
+                            <p class="text-gray-600">Diseño y producción de cajas y sobres para cartas coleccionables de Fortnite.</p>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden group">
+                         <img src="./img/countryballs 2.png" alt="Trabajo de envasado para Countryballs" class="w-full h-64 object-contain group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Cartas Countryballs</h3>
+                            <p class="text-gray-600">Packaging completo, incluyendo cajas expositoras para mazos de cartas temáticas.</p>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden group">
+                        <img src="./img/españolas 2.png" alt="Trabajo de envasado para Naipes Españoles" class="w-full h-64 object-contain group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Naipes Españoles</h3>
+                            <p class="text-gray-600">Envasado y empaquetado para la distribución masiva de naipes estilo español.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- "Contacto" Section -->
-        <section id="contacto" class="py-20 bg-white">
+        <section id="contacto" class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Póngase en Contacto</h2>
                     <p class="text-gray-600 mt-4 max-w-2xl mx-auto">¿Tiene un proyecto en mente? Nos encantaría escucharlo. Complete el formulario y nos pondremos en contacto.</p>
                 </div>
                 <div class="max-w-3xl mx-auto">
-                    <form action="#" method="POST" class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <form action="#" method="POST" class="bg-white p-8 rounded-lg shadow-md">
                         <div class="grid md:grid-cols-2 gap-6">
                             <div>
                                 <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
